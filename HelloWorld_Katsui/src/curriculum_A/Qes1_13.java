@@ -109,6 +109,7 @@ public class Qes1_13 {
 		double1= double1*100;
 		
 		//q10
+		int1=24;
 		System.out.println(int1 >= 25); 
 		System.out.print("\n");
 		

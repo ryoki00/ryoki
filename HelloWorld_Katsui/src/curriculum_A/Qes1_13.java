@@ -13,7 +13,7 @@ public class Qes1_13 {
 		float float1;
 		double double1;
 		char char1;
-		String String1;
+		String string1;
 		boolean boolean1;
 		
 		//q2
@@ -24,7 +24,7 @@ public class Qes1_13 {
 		float1=	0.0f;
 		double1=0.0d;
 		char1='\u0000';
-		String1=null;
+		string1=null;
 		boolean1=false;
 		
 		//q3
@@ -35,13 +35,13 @@ public class Qes1_13 {
 		float1=9.5f;
 		double1=10.5;
 		char1='a';
-		String1="ハロー";
+		string1="ハロー";
 		boolean1=true;
 		
 		//q4
 		System.out.println(long1+int1+short1+byte1);
 		System.out.println(byte1*2);
-		System.out.println(char1+String1+boolean1);
+		System.out.println(char1+string1+boolean1);
 		System.out.println(long1+int1+short1+byte1+float1+double1);
 		System.out.println(long1*int1*short1*byte1);
 		System.out.println(double1/short1);
@@ -55,16 +55,16 @@ public class Qes1_13 {
 		System.out.print("\n");
 		
 		//q6
-		String1="山田太郎";
+		string1="山田太郎";
 		int1=18;
 		double1=170.5;
 		float1=62.2f;
-		System.out.println("「初めまして"+(String1)+"です」");
+		System.out.println("「初めまして"+(string1)+"です」");
 		System.out.println("「年齢は"+(int1)+"歳です」");
 		System.out.println("「身長は"+(double1)+"cmです」");
 		System.out.println("「体重は"+(float1)+"kgです」");
-		String1="寿司";
-		System.out.println("「好きな食べ物は"+(String1)+"です」");
+		string1="寿司";
+		System.out.println("「好きな食べ物は"+(string1)+"です」");
 		System.out.print("\n");
 		
 		//q7
@@ -75,16 +75,16 @@ public class Qes1_13 {
 		
 		
 		//q8
-		String1="鈴木一郎";
+		string1="鈴木一郎";
 		int1=24;
 		double1=168.5;
 		float1=64.2f;
-		System.out.println("「初めまして"+(String1)+"です」");
+		System.out.println("「初めまして"+(string1)+"です」");
 		System.out.println("「年齢は"+(int1)+"歳です」");
 		System.out.println("「身長は"+(double1)+"cmです」");
 		System.out.println("「体重は"+(float1)+"kgです」");
-		String1="オムライス";
-		System.out.println("「好きな食べ物は"+(String1)+"です」");
+		string1="オムライス";
+		System.out.println("「好きな食べ物は"+(string1)+"です」");
 		
 		double1= double1/100;
 		double bmi2=  float1/ (double1 * double1);;
@@ -93,11 +93,18 @@ public class Qes1_13 {
 		System.out.print("\n");  //?
 		
 		//q9
-		System.out.println("「年齢は"+(int1*2)+"歳です」");
-		System.out.println("「身長は"+(double1*200)+"cmです」");
-		System.out.println("「体重は"+(float1*2)+"kgです」");
-		System.out.println("「好きな食べ物は"+(String1)+"です」");
-		System.out.printf("BMIは %.2f です。\n", bmi2/2);
+		int1 = int1 + int1;
+		double1 = double1 + double1;
+		float1 = float1 /2;
+
+		System.out.println("「年齢は"+(int1)+"歳です」");
+		System.out.println("「身長は"+(double1*100)+"cmです」");
+		System.out.println("「体重は"+(float1)+"kgです」");
+		System.out.println("「好きな食べ物は"+(string1)+"です」");
+		double1= double1/100;
+		double bmi3=  float1/ (double1 * double1);;
+
+		System.out.printf("BMIは %.2f です。\n", bmi3);
 		System.out.print("\n");
 		double1= double1*100;
 		
@@ -106,21 +113,21 @@ public class Qes1_13 {
 		System.out.print("\n");
 		
 		//q11
-		String Age;
-		String Height;
-		String Weight;
-		Age = String.valueOf(int1);
-		Height= String.valueOf(double1);
-		Weight = String.valueOf(float1);
-		System.out.println("「年齢は"+(Age)+"歳、身長は"+(Height)+"cm、体重は"+(Weight)+"kgです。」");
+		String age;
+		String height;
+		String weight;
+		age = String.valueOf(int1);
+		height= String.valueOf(double1);
+		weight = String.valueOf(float1);
+		System.out.println("「年齢は"+(age)+"歳、身長は"+(height)+"cm、体重は"+(weight)+"kgです。」");
 		System.out.print("\n");
 		
 		//q12
 		int inta;
 		int inth;
 		
-		inta = Integer.parseInt(Age);
-		inth = (int) Double.parseDouble(Height);
+		inta = Integer.parseInt(age);
+		inth = (int) Double.parseDouble(height);
 		
 		
 		System.out.println("「年齢は"+(inta)+"歳です」");

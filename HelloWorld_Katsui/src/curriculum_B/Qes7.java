@@ -13,6 +13,7 @@ public class Qes7 {
 		int scores[][] = new int[input][4];
 
 		for (int i = 0; i < input; i++) {
+			
 
 			System.out.print(i + 1 + "人目の『英語』の点数を入力してください：");
 			scores[i][0] = scanner.nextInt();

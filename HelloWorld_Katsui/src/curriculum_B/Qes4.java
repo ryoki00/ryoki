@@ -14,18 +14,12 @@ public class Qes4 {
 				// 9×9のときのみ「||」を付けない（行の最後だから）
 				if (j == 9) {
 					// %02d：2桁表示（例：01, 02, ... 09）
-					System.out.print(
-						String.format("%02d", i) + " * " + 
-						String.format("%02d", j) + " = " + 
-						String.format("%02d", i * j)
-					);
+					System.out.printf("%02d * %02d = %02d", i, j, i * j);
+					
 				} else {
 					// 行の途中は区切り「||」を付ける
-					System.out.print(
-						String.format("%02d", i) + " * " + 
-						String.format("%02d", j) + " = " + 
-						String.format("%02d", i * j) + " || "
-					);
+					System.out.printf("%02d * %02d = %02d || ", i, j, i * j);
+
 				}
 			}
 			

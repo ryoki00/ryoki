@@ -56,80 +56,80 @@ public class Qes1_13 {
 		System.out.print("\n");
 		
 		//q6　変数をそれぞれの型で使用
-		string1="山田太郎";
-		int1=18;
-		double1=170.5;
-		float1=62.2f;
-		System.out.println("「初めまして"+(string1)+"です」");
-		System.out.println("「年齢は"+(int1)+"歳です」");
-		System.out.println("「身長は"+(double1)+"cmです」");
-		System.out.println("「体重は"+(float1)+"kgです」");
-		string1="寿司";
-		System.out.println("「好きな食べ物は"+(string1)+"です」");
+		String name="山田太郎";
+		int age=18;
+		double height=170.5;
+		double weight=62.2;
+		System.out.println("「初めまして"+(name)+"です」");
+		System.out.println("「年齢は"+(age)+"歳です」");
+		System.out.println("「身長は"+(height)+"cmです」");
+		System.out.println("「体重は"+(weight)+"kgです」");
+		String food="寿司";
+		System.out.println("「好きな食べ物は"+(food)+"です」");
 		System.out.print("\n");
 		
 		//q7　bmiを計算
-		double1= double1/100;
-		double bmi=  float1/ (double1 * double1);;
+		
+		double bmi=  weight/ ((height/100) * (height/100));
 		System.out.printf("BMIは %.2f です。\n", bmi);
 		System.out.print("\n");
 		
 		
 		//q8　q6で宣言した変数に再代入
-		string1="鈴木一郎";
-		int1=24;
-		double1=168.5;
-		float1=64.2f;
-		System.out.println("「初めまして"+(string1)+"です」");
-		System.out.println("「年齢は"+(int1)+"歳です」");
-		System.out.println("「身長は"+(double1)+"cmです」");
-		System.out.println("「体重は"+(float1)+"kgです」");
-		string1="オムライス";
-		System.out.println("「好きな食べ物は"+(string1)+"です」");
+		name="鈴木一郎";
+		age=24;
+		height=168.5;
+		weight=64.2;
+		System.out.println("「初めまして"+(name)+"です」");
+		System.out.println("「年齢は"+(age)+"歳です」");
+		System.out.println("「身長は"+(height)+"cmです」");
+		System.out.println("「体重は"+(weight)+"kgです」");
+		food="オムライス";
+		System.out.println("「好きな食べ物は"+(food)+"です」");
 		
-		double1= double1/100;
-		double bmi2=  float1/ (double1 * double1);;
+		double bmi2=  weight/ ((height/100) * (height/100));
 		System.out.printf("BMIは %.1f です。", bmi2);
 		System.out.print("\n");
 		System.out.print("\n");  //?
 		
 		//q9 8で使用した変数【年齢・身長・体重】の数値を和算で自己代入
-		int1 = int1 + int1;
-		double1 = double1 + double1;
-		float1 = float1 /2;
+		age = age + age;
+		height = height + height;
+		weight = weight+weight;
 
-		System.out.println("「年齢は"+(int1)+"歳です」");
-		System.out.println("「身長は"+(double1*100)+"cmです」");
-		System.out.println("「体重は"+(float1)+"kgです」");
-		System.out.println("「好きな食べ物は"+(string1)+"です」");
-		double1= double1/100;
-		double bmi3=  float1/ (double1 * double1);;
-
+		System.out.println("「年齢は"+(age)+"歳です」");
+		System.out.println("「身長は"+(height)+"cmです」");
+		System.out.println("「体重は"+(weight)+"kgです」");
+		System.out.println("「好きな食べ物は"+(food)+"です」");
+		double bmi3=  weight/ ((height/100) * (height/100));
+		
 		System.out.printf("BMIは %.2f です。\n", bmi3);
 		System.out.print("\n");
-		double1= double1*100;
+		
 		
 		//q10 8で使用した年齢が25歳以上ならtrueを出力
-		int1=24;
-		System.out.println(int1 >= 25); 
+		age=24;
+		height=168.5;
+		weight=64.2;
+		System.out.println(age >= 25); 
 		System.out.print("\n");
 		
 		//q11　8で使用した【年齢・身長・体重】を文字列型に型変換
-		String age;
-		String height;
-		String weight;
-		age = String.valueOf(int1);
-		height= String.valueOf(double1);
-		weight = String.valueOf(float1);
-		System.out.println("「年齢は"+(age)+"歳、身長は"+(height)+"cm、体重は"+(weight)+"kgです。」");
+		String age1;
+		String height1;
+		String weight1;
+		age1 = String.valueOf(age);
+		height1= String.valueOf(height);
+		weight1= String.valueOf(weight);
+		System.out.println("「年齢は"+(age1)+"歳、身長は"+(height1)+"cm、体重は"+(weight1)+"kgです。」");
 		System.out.print("\n");
 		
 		//q12　11で変換した【年齢・身長】を整数型に変換
 		int inta;
 		int inth;
 		
-		inta = Integer.parseInt(age);
-		inth = (int) Double.parseDouble(height);
+		inta = Integer.parseInt(age1);
+		inth = (int) Double.parseDouble(height1);
 		
 		
 		System.out.println("「年齢は"+(inta)+"歳です」");

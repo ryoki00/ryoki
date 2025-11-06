@@ -20,7 +20,7 @@ public class Process {
 
 	}
 
-	//表示
+	//表示1
 	public void show() {
 		System.out.println(this.greeting + "ここは" + this.place + "です!");
 		System.out.println("この" + this.food + "はうまい");

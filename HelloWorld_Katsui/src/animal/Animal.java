@@ -1,7 +1,7 @@
 package animal;
 
 public class Animal {
-	// フィールド
+	// フィールド1
 	private String name;
 	private double length;
 	private int speed;

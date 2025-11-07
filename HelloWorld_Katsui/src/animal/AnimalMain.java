@@ -2,7 +2,7 @@ package animal;
 
 public class AnimalMain {
 	public static void main(String[] args) {
-		// インスタンス
+		// インスタンス1
 		Animal lion = new Animal();
 
 		// setter

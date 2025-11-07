@@ -9,7 +9,7 @@ public class Character {
 	}
 
 	public Character() {
-		// TODO 自動生成されたコンストラクター・スタブ
+
 	}
 
 	public void hellow() {
